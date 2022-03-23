@@ -15,22 +15,23 @@ function mathC(b) {
   return C
 }
 
-mathC(question())
+function mathF(c) {
+  var F = ((c*9)/5+32);
+  return F
+}
 
-function unit(C) {
+function unit(x, y) {
 var that = prompt("Which unit of temperature do you wish to convert to(Press f for farenheit and c for celsius)?")
   if (that == "f"){
-    alert(`The temperature is ${C} degrees celsius`)
+    alert(`The temperature is ${x} degrees celsius`)
   }
   else if (that == "c") {
-    alert(`The temperature is ${C} degrees farenheit`)
+    alert(`The temperature is ${y} degrees farenheit`)
   }
 return that
 }
 
-unit(mathC())
+unit(mathC(question()))
 
 
 
-
-  
